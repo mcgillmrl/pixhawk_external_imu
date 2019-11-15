@@ -1,6 +1,14 @@
 # pixhawk_external_imu
 Using a pixhawk as an external imu for the MRL robots.
 
+## Installing
+Install dependencies with the following commands (replace `melodic` with your ros version)
+
+    sudo apt install ros-melodic-mavros ros-melodic-mavros-msgs ros-melodic-mavros-extras
+    pip install mavproxy
+
+## Running
+
 To launch
  
      roslaunch pixhawk_external_imu apm2.launch
