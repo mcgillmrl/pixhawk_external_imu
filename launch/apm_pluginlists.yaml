@@ -1,0 +1,46 @@
+plugin_blacklist:
+# common
+- 3dr_radio
+- actuator_control
+- adsb
+- altitude
+- cam_imu_sync
+- companion_process_status
+- debug_value
+- distance_sensor
+- fake_gps
+- ftp
+- gps_rtk
+- global_position
+- home_position
+- hil
+- image_pub
+- landing_target
+  #- local_position
+- log_transfer
+- manual_control
+- mocap_pose_estimate
+- mount_control
+- obstacle_distance
+- odom
+- onboard_computer_status
+- px4flow
+- rangefinder
+- rc_io
+- setpoint_accel
+- setpoint_attitude
+- setpoint_position
+- setpoint_raw
+- setpoint_velocity
+- safety_area
+- trajectory
+- vfr_hud
+- vibration
+- vision_pose_estimate
+- vision_speed_estimate
+- waypoint
+- wheel_odometry
+- wind_estimation
+
+plugin_whitelist: []
+#- 'sys_*'
