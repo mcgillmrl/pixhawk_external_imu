@@ -2,8 +2,8 @@
 	<!-- vim: set ft=xml noet : -->
 	<!-- example launch script for ArduPilot based FCU's -->
 
-	<arg name="fcu_url" default="/dev/ttyACM0:1000000" />
-	<arg name="gcs_url" default="udp://127.0.0.1:14560@127.0.0.1:14553" />
+	<arg name="fcu_url" default="/dev/aqua/pixhawk:921600" />
+	<arg name="gcs_url" default="udp://@localhost" />
 	<arg name="tgt_system" default="1" />
 	<arg name="tgt_component" default="1" />
 	<arg name="log_output" default="screen" />
@@ -21,6 +21,7 @@
 		<arg name="log_output" value="$(arg log_output)" />
 		<arg name="fcu_protocol" value="$(arg fcu_protocol)" />
 		<arg name="respawn_mavros" default="$(arg respawn_mavros)" />
+		<remap from="base_link" to="ext_imu"/>
 	</include>
 
 	<node pkg="pixhawk_external_imu" type="set_stream_rates.sh" name="set_stream_rates" respawn="true" respawn_delay="30"/>
